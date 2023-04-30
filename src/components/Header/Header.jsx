@@ -36,38 +36,38 @@ const Header = () => {
           <div className={style.header__menu}>
             <ul>
               <li>
-                <Link to="/">Акции</Link>
+                <Link to="/aksiya">Акции</Link>
               </li>
               <li>
-                <Link to="/">Кредит</Link>
+                <Link to="/kredit">Кредит</Link>
               </li>
               <li>
-                <Link to="/">Оплата и доставка</Link>
+                <Link to="/yetkazib_berish">Оплата и доставка</Link>
               </li>
               <li>
-                <Link to="/">Скупка Б/У</Link>
+                <Link to="/B_U">Скупка Б/У</Link>
               </li>
               <li>
-                <Link to="/">Контакты</Link>
+                <Link to="/kontakt">Контакты</Link>
               </li>
             </ul>
 
 
             <ul className={ham === 4 ? style.header__ham_menu : style.header__menu2}>
               <li>
-                <Link to="/">Акции</Link>
+                <Link to="/aksiya">Акции</Link>
               </li>
               <li>
-                <Link to="/">Кредит</Link>
+                <Link to="/kredit">Кредит</Link>
               </li>
               <li>
-                <Link to="/">Оплата и доставка</Link>
+                <Link to="/yetkazib_berish">Оплата и доставка</Link>
               </li>
               <li>
-                <Link to="/">Скупка Б/У</Link>
+                <Link to="/B_U">Скупка Б/У</Link>
               </li>
               <li>
-                <Link to="/">Контакты</Link>
+                <Link to="/kontakt">Контакты</Link>
               </li>
             </ul>
           </div>
