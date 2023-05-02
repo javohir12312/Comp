@@ -22,7 +22,6 @@ const Header = () => {
   }
   return (
     <>
-      <div className={style.container}>
 
         <Korzinka isTrue={selector} />
 
@@ -113,7 +112,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div >
     </>
   )
 }

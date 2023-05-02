@@ -19,7 +19,6 @@ const App = () => {
         <Route path='/yetkazib_berish' element={<Tolov_Yetkazib_berish />} />
         <Route path='/B_U' element={<B_U />} />
         <Route path='/kontakt' element={<Kontakt />} />
-
       </Routes>
     </>
   )

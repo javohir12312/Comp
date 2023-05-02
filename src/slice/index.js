@@ -3,11 +3,13 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   korzina: false,
   signin: false,
+  katalog: false,
 };
 
 const userData = createSlice({
   name: "korzina",
   name: "signin",
+  name: "katalog",
   initialState,
   reducers: {
     openKorzinka: (state) => {
@@ -18,8 +20,12 @@ const userData = createSlice({
       state.signin = !state.signin
       console.log(state.signin);
     },
+    openKatalog: (state) => {
+      state.katalog = !state.katalog
+      console.log(state.katalog);
+    },
   }
 });
 
-export const { openKorzinka ,openSignin} = userData.actions;
+export const { openKorzinka, openSignin, openKatalog } = userData.actions;
 export default userData.reducer;
