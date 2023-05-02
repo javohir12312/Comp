@@ -1,10 +1,11 @@
 import React from 'react'
-import style from "./Katalog.module.scss"
-import { useDispatch, useSelector } from 'react-redux'
-import { openKatalog } from '../../slice'
+import style from "../Korzinka/Korzinka.module.scss"
+import { useDispatch, useSelector } from 'react-redux';
+import { openKorzinka } from '../../../slice';
 
-const Katalog = () => {
-  const selector = useSelector(state => state.data.Katalog)
+const Korzinka = ({ ...props }) => {
+
+  const selector = useSelector(state => state.data.korzina)
   // console.log(props);
   const dispatch = useDispatch()
 
@@ -19,13 +20,13 @@ const Katalog = () => {
                 Korzinka
               </h2>
 
-              <img style={{ cursor: "pointer" }} onClick={() => dispatch(openKatalog())} src="../assets/close_icon.svg" alt="" />
+              <img style={{ cursor: "pointer" }} onClick={() => dispatch(openKorzinka())} src="../assets/close_icon.svg" alt="" />
             </div>
 
             <h4>
               Название комплекта
             </h4>
-
+            
             <br />
             <hr />
           </div>
@@ -35,4 +36,4 @@ const Katalog = () => {
   )
 }
 
-export default Katalog
+export default Korzinka

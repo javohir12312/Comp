@@ -1,32 +1,31 @@
 import React from 'react'
-import style from "../Korzinka/Korzinka.module.scss"
-import { useDispatch, useSelector } from 'react-redux';
-import { openKorzinka } from '../../slice';
+import style from "./Katalog.module.scss"
+import { useDispatch, useSelector } from 'react-redux'
+import { openKatalog } from '../../../slice'
 
-const Korzinka = ({ ...props }) => {
-
-  const selector = useSelector(state => state.data.korzina)
+const Katalog = () => {
+  const selector = useSelector(state => state.data.katalog)
   // console.log(props);
   const dispatch = useDispatch()
 
-  // console.log(props.isTrue);
+  console.log(selector);
   return (
     <>
-      {props.isTrue ?
+      {selector ?
         <div className={style.bigBox}>
           <div className={style.box}>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
               <h2>
-                Korzinka
+                КАТАЛОГ ТОВАРОВ
               </h2>
 
-              <img style={{ cursor: "pointer" }} onClick={() => dispatch(openKorzinka())} src="../assets/close_icon.svg" alt="" />
+              <img style={{ cursor: "pointer" }} onClick={() => dispatch(openKatalog())} src="../assets/close_icon.svg" alt="" />
             </div>
 
             <h4>
               Название комплекта
             </h4>
-            
+
             <br />
             <hr />
           </div>
@@ -36,4 +35,4 @@ const Korzinka = ({ ...props }) => {
   )
 }
 
-export default Korzinka
+export default Katalog

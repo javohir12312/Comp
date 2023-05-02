@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import style from "../Signin/Signin.module.scss"
-import { openSignin } from '../../slice'
+import { openSignin } from '../../../slice'
 import { Button, Form, Input } from 'antd'
 import { Link } from 'react-router-dom'
 

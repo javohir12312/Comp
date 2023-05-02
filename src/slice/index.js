@@ -14,11 +14,9 @@ const userData = createSlice({
   reducers: {
     openKorzinka: (state) => {
       state.korzina = !state.korzina
-      console.log(state.korzina);
     },
     openSignin: (state) => {
       state.signin = !state.signin
-      console.log(state.signin);
     },
     openKatalog: (state) => {
       state.katalog = !state.katalog
