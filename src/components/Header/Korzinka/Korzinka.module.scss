@@ -2,15 +2,34 @@
   width: 1064px;
   background-color: white;
   position: absolute;
-  top: 50%;
+  top: -100%;
   left: 50%;
   transform: translate(-50%,-50%);
   padding: 24px;
   color: black;
   border-radius: 8px;
+  transition: 0.4s ease-out;
+
+  div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   @media screen and (max-width:1100px) {
     width: 800px;
+  }
+
+  @media screen and (max-width:850px) {
+    width: 600px;
+  }
+
+  @media screen and (max-width:620px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width:420px) {
+    width: 300px;
   }
 
   h2 {

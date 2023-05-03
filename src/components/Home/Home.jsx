@@ -1,10 +1,17 @@
 import React from 'react'
-import Header from '../Header/Header'
+import Slider from './Slider/Slider'
+import style from  "./Home.module.scss"
+import Katalog from "../Header/Katalog/Katalog"
 
 const Home = () => {
   return (
     <>
-    <h2 style={{color:"black"}}>Home</h2>
+      <div className={style.box} style={{display:"flex",marginTop:"25px "} }>
+        <div style={{width:"400px", overflowY:"hidden"}}>
+          <Katalog/>
+        </div>
+        <Slider />
+      </div>
     </>
   )
 }

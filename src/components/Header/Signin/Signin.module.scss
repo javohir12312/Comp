@@ -3,12 +3,13 @@
   height: 400px;
   background-color: white;
   position: absolute;
-  top: 0%;
-  right: 50%;
+  transition: 0.4s ease-in-out;
+  top: -1000%;
+  right: -100%;
   margin: 0 auto;
-  transform: translate(50%, 75%);
   padding: 24px;
   color: black;
+  z-index: 19;
   border-radius: 8px;
 
   h2 {

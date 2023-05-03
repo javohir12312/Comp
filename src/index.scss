@@ -1,13 +1,15 @@
-*,*::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  
+
 }
 
-*{
-  a{
+* {
+  a {
     color: white;
   }
 }
@@ -17,7 +19,16 @@ html {
   scroll-behavior: smooth;
 }
 
-body, #root {
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+
+body,
+#root {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -40,7 +51,7 @@ img {
   object-fit: cover;
 }
 
-a{
+a {
   text-decoration: none;
 }
 

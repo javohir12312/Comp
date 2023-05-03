@@ -28,7 +28,6 @@ const Header = () => {
       <Korzinka isTrue={selector} />
 
       <Signin />
-      <Katalog/>
       <div className={style.header}>
 
         <div onClick={() => openMenu(ham === 4 ? false : 4)} className={style.header__ham}>
@@ -70,7 +69,7 @@ const Header = () => {
 
 
         <img className={style.header__mobile_logo} src="../assets/logo_top.svg" alt="" />
-        <button onClick={() => dispatch(openSignin())} style={{ background: "none", border: "none" }} >
+        <button onClick={() => dispatch(openSignin())} style={{ background: "none", border: "none",cursor:"pointer" }} >
           <img src="../assets/profile.svg" alt="" />
         </button>
       </div>

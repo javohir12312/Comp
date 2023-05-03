@@ -1,39 +1,40 @@
-import React from 'react'
-import style from "../Korzinka/Korzinka.module.scss"
-import { useDispatch, useSelector } from 'react-redux';
-import { openKorzinka } from '../../../slice';
+import React, { useEffect } from 'react'
+import styles from "./Korzinka.module.scss"
+import { useDispatch, useSelector } from 'react-redux'
+import { openKatalog, openKorzinka } from '../../../slice'
 
-const Korzinka = ({ ...props }) => {
-
+const Katalog = () => {
   const selector = useSelector(state => state.data.korzina)
   // console.log(props);
   const dispatch = useDispatch()
 
-  // console.log(props.isTrue);
+  console.log(selector);
+
+  const box = document.querySelector("#box")
+
+
   return (
     <>
-      {props.isTrue ?
-        <div className={style.bigBox}>
-          <div className={style.box}>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-              <h2>
-                Korzinka
-              </h2>
+      <div className={selector ? styles.bigBox : null}>
+        <div id='box' style={selector ? { top: "50%" } : { top: "-100%" }} className={styles.box}>
+          <div>
+            <h2>
+              Korzinka
+            </h2>
 
-              <img style={{ cursor: "pointer" }} onClick={() => dispatch(openKorzinka())} src="../assets/close_icon.svg" alt="" />
-            </div>
-
-            <h4>
-              Название комплекта
-            </h4>
-            
-            <br />
-            <hr />
+            <img styles={{ cursor: "pointer" }} onClick={() => dispatch(openKorzinka())} src="../assets/close_icon.svg" alt="" />
           </div>
-        </div> :
-        null}
+
+          <h4>
+            Название комплекта
+          </h4>
+
+          <br />
+          <hr />
+        </div>
+      </div>
     </>
   )
 }
 
-export default Korzinka
+export default Katalog

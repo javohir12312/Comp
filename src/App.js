@@ -4,7 +4,7 @@ import Home from './components/Home/Home'
 import B_U from './components/B_U/B_U'
 import Kontakt from './components/Kontakt/Kontakt'
 import Header from './components/Header/Header'
-import Aksiya from './components/Header/Aksiya/Aksiya'
+import Aksiya from './components/Aksiya/Aksiya'
 import Tolov_Yetkazib_berish from './components/Header/Tolov_Yetkazib_berish/Tolov_Yetkazib_berish'
 
 const App = () => {

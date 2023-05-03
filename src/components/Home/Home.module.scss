@@ -1,0 +1,9 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
