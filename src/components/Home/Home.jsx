@@ -2,12 +2,14 @@ import React from 'react'
 import Slider from './Slider/Slider'
 import style from "./Home.module.scss"
 import Katalog from "../Header/Katalog/Katalog"
+import { useSelector } from 'react-redux'
 
 const Home = () => {
+  const katalog = useSelector(state => state.data.katalog)
   return (
     <>
       <div className={style.box} style={{ display: "flex", marginTop: "25px ", alignItems: "center", justifyContent: "space-around" }}>
-        <div style={{ width: "400px", overflowY: "hidden" }}>
+        <div className={style.menu} style={{ width: "400px", overflowY: "hidden" }}>
           <Katalog />
         </div>
         <div style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>

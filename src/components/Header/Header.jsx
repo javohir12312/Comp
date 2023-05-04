@@ -14,10 +14,9 @@ const Header = () => {
   const [ham, setHam] = useState(false)
 
   const selector = useSelector(state => state.data.korzina)
-  const SigninIstrue = useSelector(state => state.data.Signin)
-  const kotalogIstrue = useSelector(state => state.data.Katalog)
+  const kotalogIstrue = useSelector(state => state.data.katalog)
   const dispatch = useDispatch()
-  console.log(selector);
+  console.log(kotalogIstrue);
   function openMenu(word) {
     setHam(word)
     console.log(word);
@@ -28,6 +27,10 @@ const Header = () => {
       <Korzinka isTrue={selector} />
 
       <Signin />
+      {kotalogIstrue ?
+        <div style={{ display: "flex" }}>
+          <Katalog /> <button onClick={() => dispatch(openKatalog())} style={{width:"100%", background: "white", border: "none", position: "absolute", right: "0", top: "0", zIndex: "16",paddingLeft:"30px", paddingBottom:"20px", paddingRight: "40px", paddingTop: "20px", cursor:"pointer" ,display:"flex", alignItems:"end", justifyContent:"end"}}><img src="../assets/close_icon.svg" alt="" /></button>
+        </div> : null}
       <div className={style.header}>
 
         <div onClick={() => openMenu(ham === 4 ? false : 4)} className={style.header__ham}>
@@ -40,7 +43,7 @@ const Header = () => {
               <Link to="/aksiya">Акции</Link>
             </li>
             <li>
-              <Link to="/yetkazib_berish">Оплата и доставка</Link>
+              <Link to="/Yetkazib_Berish">Оплата и доставка</Link>
             </li>
             <li>
               <Link to="/B_U">Скупка Б/У</Link>
@@ -69,7 +72,7 @@ const Header = () => {
 
 
         <img className={style.header__mobile_logo} src="../assets/logo_top.svg" alt="" />
-        <button onClick={() => dispatch(openSignin())} style={{ background: "none", border: "none",cursor:"pointer" }} >
+        <button onClick={() => dispatch(openSignin())} style={{ background: "none", border: "none", cursor: "pointer" }} >
           <img src="../assets/profile.svg" alt="" />
         </button>
       </div>
@@ -80,7 +83,11 @@ const Header = () => {
         </Link>
 
 
-        <button onClick={() => dispatch(openKatalog())} >
+        <button className={style.katalog_css1} >
+          КАТАЛОГ ТОВАРОВ <img src="../assets/katalog.svg" alt="" />
+        </button>
+
+        <button className={style.katalog_css2} onClick={() => dispatch(openKatalog())} >
           КАТАЛОГ ТОВАРОВ <img src="../assets/katalog.svg" alt="" />
         </button>
         <div className={style.header__bottom__inner}>

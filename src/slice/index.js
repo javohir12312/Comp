@@ -20,7 +20,6 @@ const userData = createSlice({
     },
     openKatalog: (state) => {
       state.katalog = !state.katalog
-      console.log(state.katalog);
     },
   }
 });
