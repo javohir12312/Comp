@@ -20,10 +20,11 @@ const Signin = () => {
   return (
     <>
       <div className={selector ? style.bigBox : null}>
-        <div style={selector ? {
+        <div style={selector ?
+        {
           top: "0%", right: "50%",
           transform: "translate(50%, 75%)"
-        } : { top: "-100%" }} className={style.box}>
+        } : { top: "-1000%" }} className={style.box}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
             <h2>
               Вход

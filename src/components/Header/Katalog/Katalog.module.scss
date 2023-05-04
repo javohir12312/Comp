@@ -51,6 +51,7 @@
   margin: 20px;
   overflow-y: scroll;
   transition: 0.4s;
+  z-index: 15;
 
   @media screen and (max-width:1620px) {
     width: 250px;
@@ -69,6 +70,7 @@
     padding-top: 50px;
     left: 0%;
     margin: 0;
+    z-index: 15;
     z-index: 15;
     transition: 0.4s ease-in-out;
   }

@@ -3,6 +3,8 @@ import Slider from './Slider/Slider'
 import style from "./Home.module.scss"
 import Katalog from "../Header/Katalog/Katalog"
 import { useSelector } from 'react-redux'
+import Mobile_Slider from './Mobile_Slider/Mobile_Slider'
+import Cards from './Cards/Cards'
 
 const Home = () => {
   const katalog = useSelector(state => state.data.katalog)
@@ -52,7 +54,11 @@ const Home = () => {
                 консультация</h2>
             </li>
           </ul>
+
+          <Mobile_Slider/>
         </div>
+
+        <Cards/>
 
       </div>
     </>
