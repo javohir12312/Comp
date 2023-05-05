@@ -14,6 +14,7 @@ const Header = () => {
   const [ham, setHam] = useState(false)
 
   const selector = useSelector(state => state.data.korzina)
+  const signin = useSelector(state => state.data.signin)
   const kotalogIstrue = useSelector(state => state.data.katalog)
   const dispatch = useDispatch()
   console.log(kotalogIstrue);
@@ -21,9 +22,17 @@ const Header = () => {
     setHam(word)
     console.log(word);
   }
+
+  const body = document.body
+  if(selector || signin){
+
+    body.style.overflow = 'hidden'
+  }else{
+    body.style.overflow = 'scroll'
+  }
+
   return (
     <>
-
       <Korzinka isTrue={selector} />
 
       <Signin />

@@ -23,7 +23,7 @@ const Signin = () => {
         <div style={selector ?
         {
           top: "0%", right: "50%",
-          transform: "translate(50%, 75%)"
+          transform: "translate(50%, 50%)"
         } : { top: "-1000%" }} className={style.box}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
             <h2>

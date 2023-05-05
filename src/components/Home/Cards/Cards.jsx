@@ -18,7 +18,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -33,7 +33,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -48,7 +48,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -63,7 +63,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -78,7 +78,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -93,7 +93,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -108,7 +108,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -123,7 +123,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -138,7 +138,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -153,7 +153,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -168,7 +168,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -183,7 +183,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -198,7 +198,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -213,7 +213,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -228,7 +228,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -243,7 +243,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -258,7 +258,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -273,7 +273,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -288,7 +288,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -303,7 +303,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -318,7 +318,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -333,7 +333,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -348,7 +348,7 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
@@ -363,10 +363,12 @@ const Cards = () => {
               <h3>3500</h3><p>грн.</p>
             </div>
             <button>
-              КУПИТЬ
+              <p>КУПИТЬ</p> <img src="../assets/shop_icon.svg" alt="" width={15} />
             </button>
           </div>
         </li>
+
+        <p className={style.all_see}>Смотреть все <img src="../assets/vector_see.svg" alt="" width={15}/></p>
       </ul>
     </div>
   )

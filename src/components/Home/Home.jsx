@@ -10,12 +10,14 @@ const Home = () => {
   const katalog = useSelector(state => state.data.katalog)
   return (
     <>
-      <div className={style.box} style={{ display: "flex", marginTop: "25px ", alignItems: "center", justifyContent: "space-around" }}>
+      <div className={style.box}>
         <div className={style.menu} style={{ width: "400px", overflowY: "hidden" }}>
           <Katalog />
         </div>
         <div style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
-          <Slider />
+          <div className={style.slide_box}>
+            <Slider />
+          </div>
 
           <ul className={style.list}>
             <li>
@@ -55,10 +57,12 @@ const Home = () => {
             </li>
           </ul>
 
-          <Mobile_Slider/>
+          <div className={style.slide_box}>
+          <Mobile_Slider />
+          </div>
         </div>
 
-        <Cards/>
+        <Cards />
 
       </div>
     </>
