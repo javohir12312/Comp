@@ -19,12 +19,14 @@ const Signin = () => {
 
   return (
     <>
-      <div className={selector ? style.bigBox : null}>
+      <div>
+        <div onClick={() => dispatch(openSignin())} className={selector ? style.bigBox : style.bigBox2}>
+        </div>
         <div style={selector ?
-        {
-          top: "0%", right: "50%",
-          transform: "translate(50%, 50%)"
-        } : { top: "-1000%" }} className={style.box}>
+          {
+            top: "0%", right: "50%",
+            transform: "translate(50%, 50%)"
+          } : { top: "-1000%", right:"50%" }} className={style.box}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
             <h2>
               Вход
@@ -66,7 +68,7 @@ const Signin = () => {
             </div>
 
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "10px", marginTop: "10px" }}>
-              <p>Нет аккаунта? </p> <Link style={{ color: "blue" }} to={'/'}>Зарегистрироваться</Link>
+              <p style={{ fontSize: 14 }}>Нет аккаунта? </p> <Link style={{ color: "blue" }} to={'/'}>Зарегистрироваться</Link>
             </div>
           </Form>
         </div>

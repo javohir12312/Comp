@@ -10,13 +10,15 @@ const Katalog = () => {
 
   console.log(selector);
 
-  const box = document.querySelector("#box")
 
 
   return (
     <>
-      <div className={selector ? styles.bigBox : null}>
-        <div id='box' style={selector ? { top: "50%" } : { top: "-100%" }} className={styles.box}>
+      <div style={selector ? {height:'100%'} : null}>
+        <div onClick={() => dispatch(openKorzinka())} className={selector ? styles.bigBox : null}>
+
+        </div>
+        <div id='box' style={selector ? { top: "50%", zIndex:23, transform:'translate(-50%,50%)' } : { top: "-100%" }} className={styles.box}>
           <div>
             <h2>
               Korzinka
